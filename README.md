@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Skill-Inspection-Safety-Verification"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
@@ -67,9 +67,9 @@ The following enterprise platforms provide managed, hosted, and cloud-native sol
 
 Explore the most popular open-source repositories for auditing AI skills, scanning MCP servers, conducting automated red teaming, and enforcing runtime guardrails. 
 
-*Repositories are sorted in descending order by GitHub star count.*
+*Repositories are sorted in descending order by GitHub Stars_Count.*
 
-| Repository | Stars Badge | Key Capabilities &amp; Verification Focus | License |
+| Repository | Stars_Badge | Key Capabilities &amp; Verification Focus | License |
 | :--- | :---: | :--- | :--- |
 | **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** | [![Stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social&color=white)](https://github.com/promptfoo/promptfoo/stargazers) | CLI &amp; evaluation harness featuring automated red-teaming (`promptfoo redteam`) for CI/CD gating of prompts, skills, and agents against OWASP LLM Top 10 vulnerabilities. | `MIT` |
 | **[NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector)** | [![Stars](https://img.shields.io/github/stars/NVIDIA/SkillSpector?style=social&color=white)](https://github.com/NVIDIA/SkillSpector/stargazers) | Flagship toolkit for statically and dynamically auditing AI agent capability packs (`SKILL.md`) and extension scripts for prompt injection payloads, privilege escalation, and unsafe tool usage. | `Apache-2.0` |
@@ -104,7 +104,7 @@ We welcome contributions from the cybersecurity and AI safety engineering commun
 
 1. 🍴 **Fork the repository**
 2. 🌿 **Create a new branch**: `git checkout -b feature/add-tool-name`
-3. ✍️ **Add or update the listing**: Ensure SaaS entries include verified starting tier prices, specific free tier limits, and updated market sizes. For open-source projects, link to the repository and include the social star badge.
+3. ✍️ **Add or update the listing**: Ensure SaaS entries include verified starting tier prices, specific free tier limits, and updated market sizes. For open-source projects, link to the repository and include the social Stars_Badge.
 4. 🚀 **Commit your changes**: `git commit -m "Add ToolName: AI skill inspection and safety verification"`
 5. 📤 **Push to the branch**: `git push origin feature/add-tool-name`
 6. 🎯 **Open a Pull Request** with a brief summary of the added solution and verified reference links.
