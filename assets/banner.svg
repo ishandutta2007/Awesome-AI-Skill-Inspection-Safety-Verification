@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913" />
+      <stop offset="50%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Vibrant Accent Gradients -->
+    <linearGradient id="cyberCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Dynamic Neon Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(-15px, 10px); opacity: 0.65; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0); opacity: 0.2; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(420px); opacity: 0.2; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes flowBeam {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .orb1 { animation: pulseOrb 8s infinite ease-in-out; transform-origin: 200px 100px; }
+    .orb2 { animation: pulseOrb 10s infinite ease-in-out reverse; transform-origin: 1000px 300px; }
+    .scanner { animation: scanline 5s infinite linear; }
+    .pill1 { animation: floatPill 4s infinite ease-in-out; }
+    .pill2 { animation: floatPill 4.5s infinite ease-in-out 0.5s; }
+    .pill3 { animation: floatPill 5s infinite ease-in-out 1s; }
+    .pill4 { animation: floatPill 4.2s infinite ease-in-out 1.5s; }
+    .flow-line { stroke-dasharray: 10, 15; animation: flowBeam 3s linear infinite; }
+  </style>
+
+  <!-- Deep Cosmic Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="orb1" cx="220" cy="110" r="140" fill="#38bdf8" filter="url(#neonGlow)" />
+  <circle class="orb2" cx="1020" cy="300" r="160" fill="#6366f1" filter="url(#neonGlow)" />
+  <circle cx="600" cy="210" r="180" fill="#a855f7" opacity="0.15" filter="url(#neonGlow)" />
+
+  <!-- Tech Perspective Grid -->
+  <rect width="1200" height="420" fill="url(#techGrid)" />
+
+  <!-- Animated Cyber Scanline -->
+  <line class="scanner" x1="0" y1="0" x2="1200" y2="0" stroke="#38bdf8" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Dynamic Connection Flow Streams (Side Visuals) -->
+  <g opacity="0.4">
+    <path class="flow-line" d="M 50,80 Q 200,40 350,90" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="flow-line" d="M 850,340 Q 1000,380 1150,330" fill="none" stroke="#818cf8" stroke-width="2" />
+  </g>
+
+  <!-- Security Shield & Circuit Emblem (Left Foreground) -->
+  <g transform="translate(100, 115)" filter="url(#subtleGlow)">
+    <polygon points="50,10 90,25 90,75 50,110 10,75 10,25" fill="url(#shieldGrad)" stroke="#38bdf8" stroke-width="2.5" />
+    <!-- Inner Shield Checkmark & Micro-nodes -->
+    <path d="M 33,58 L 46,71 L 68,43" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Surrounding Orbital Rings -->
+    <circle cx="50" cy="60" r="68" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="6,8" opacity="0.7" />
+  </g>
+
+  <!-- AI Agent MCP Inspection Emblem (Right Foreground) -->
+  <g transform="translate(1000, 115)" filter="url(#subtleGlow)">
+    <polygon points="50,10 90,25 90,75 50,110 10,75 10,25" fill="url(#shieldGrad)" stroke="#c084fc" stroke-width="2.5" />
+    <!-- MCP Node Connectivity Icon -->
+    <circle cx="50" cy="42" r="7" fill="#ffffff" />
+    <circle cx="32" cy="72" r="6" fill="#38bdf8" />
+    <circle cx="68" cy="72" r="6" fill="#c084fc" />
+    <line x1="50" y1="42" x2="32" y2="72" stroke="#ffffff" stroke-width="2.5" />
+    <line x1="50" y1="42" x2="68" y2="72" stroke="#ffffff" stroke-width="2.5" />
+    <line x1="32" y1="72" x2="68" y2="72" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3" />
+    <!-- Surrounding Orbital Rings -->
+    <circle cx="50" cy="60" r="68" fill="none" stroke="#a855f7" stroke-width="1" stroke-dasharray="8,6" opacity="0.7" />
+  </g>
+
+  <!-- High-Contrast Typography & Headers (Strictly Foregrounded) -->
+  <g text-anchor="middle">
+    <!-- Category Pill Badge -->
+    <g transform="translate(600, 75)">
+      <rect x="-190" y="-18" width="380" height="36" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" letter-spacing="2">
+        🛡️ AI AGENT SECURITY &amp; VERIFICATION
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      Awesome AI Skill Inspection
+    </text>
+
+    <!-- Subtitle with Glowing Gradient -->
+    <text x="600" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="url(#cyberCyan)" letter-spacing="0.5">
+      &amp; Safety Verification
+    </text>
+
+    <!-- Tagline Description -->
+    <text x="600" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Curated Auditing Toolkit for SKILL.md, MCP Servers, Model Weights &amp; Autonomous Agent Guardrails
+    </text>
+  </g>
+
+  <!-- Interactive / Floating Feature Pills at Bottom -->
+  <g transform="translate(600, 320)">
+    <!-- Pill 1: SKILL.md Scanners -->
+    <g class="pill1" transform="translate(-360, 0)">
+      <rect x="-105" y="-18" width="210" height="38" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="0" y="6" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#f8fafc">
+        🔍 SKILL.md Auditing
+      </text>
+    </g>
+
+    <!-- Pill 2: MCP Tool Verification -->
+    <g class="pill2" transform="translate(-120, 0)">
+      <rect x="-110" y="-18" width="220" height="38" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" />
+      <text x="0" y="6" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#f8fafc">
+        ⚡ MCP Server Defense
+      </text>
+    </g>
+
+    <!-- Pill 3: Automated Red-Teaming -->
+    <g class="pill3" transform="translate(125, 0)">
+      <rect x="-110" y="-18" width="220" height="38" rx="10" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.2" />
+      <text x="0" y="6" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#f8fafc">
+        🎯 Automated Red Teaming
+      </text>
+    </g>
+
+    <!-- Pill 4: Runtime Guardrails -->
+    <g class="pill4" transform="translate(365, 0)">
+      <rect x="-105" y="-18" width="210" height="38" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="0" y="6" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#f8fafc">
+        🛡️ Runtime Guardrails
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Border Line -->
+  <rect x="0" y="416" width="1200" height="4" fill="url(#cyberCyan)" />
+</svg>
